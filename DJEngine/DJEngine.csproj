@@ -1,0 +1,946 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{820B2A1A-244F-403A-A84E-5448F1533F73}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DJEngine</RootNamespace>
+    <AssemblyName>DJEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="BarcodeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=4.0.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <HintPath>..\..\..\Sae\Trunk\SAE\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SVNOUT\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Controls\ucEmail.ascx.cs">
+      <DependentUpon>ucEmail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucEmail.ascx.designer.cs">
+      <DependentUpon>ucEmail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucEstadoCivil.ascx.cs">
+      <DependentUpon>ucEstadoCivil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucEstadoCivil.ascx.designer.cs">
+      <DependentUpon>ucEstadoCivil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucMontosCe.ascx.cs">
+      <DependentUpon>ucMontosCe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucMontosCe.ascx.designer.cs">
+      <DependentUpon>ucMontosCe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucCUIT.ascx.cs">
+      <DependentUpon>ucCUIT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucCUIT.ascx.designer.cs">
+      <DependentUpon>ucCUIT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucFechaRub.ascx.cs">
+      <DependentUpon>ucFechaRub.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucFechaRub.ascx.designer.cs">
+      <DependentUpon>ucFechaRub.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucAsamblea.ascx.cs">
+      <DependentUpon>ucAsamblea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucAsamblea.ascx.designer.cs">
+      <DependentUpon>ucAsamblea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucMontosPesos.ascx.cs">
+      <DependentUpon>ucMontosPesos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucMontosPesos.ascx.designer.cs">
+      <DependentUpon>ucMontosPesos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucDictamen.ascx.cs">
+      <DependentUpon>ucDictamen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucDictamen.ascx.designer.cs">
+      <DependentUpon>ucDictamen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucCuentaBanco.ascx.cs">
+      <DependentUpon>ucCuentaBanco.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucCuentaBanco.ascx.designer.cs">
+      <DependentUpon>ucCuentaBanco.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucNacionalidad.ascx.cs">
+      <DependentUpon>ucNacionalidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucNacionalidad.ascx.designer.cs">
+      <DependentUpon>ucNacionalidad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucProfesion.ascx.cs">
+      <DependentUpon>ucProfesion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucProfesion.ascx.designer.cs">
+      <DependentUpon>ucProfesion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucValores.ascx.cs">
+      <DependentUpon>ucValores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucValores.ascx.designer.cs">
+      <DependentUpon>ucValores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucMontos.ascx.cs">
+      <DependentUpon>ucMontos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucMontos.ascx.designer.cs">
+      <DependentUpon>ucMontos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucDomicilioReal.ascx.cs">
+      <DependentUpon>ucDomicilioReal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucDomicilioReal.ascx.designer.cs">
+      <DependentUpon>ucDomicilioReal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucCargo.ascx.cs">
+      <DependentUpon>ucCargo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucCargo.ascx.designer.cs">
+      <DependentUpon>ucCargo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucFechaNac.ascx.cs">
+      <DependentUpon>ucFechaNac.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucFechaNac.ascx.designer.cs">
+      <DependentUpon>ucFechaNac.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucDomicilio.ascx.cs">
+      <DependentUpon>ucDomicilio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucDomicilio.ascx.designer.cs">
+      <DependentUpon>ucDomicilio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucAcciones.ascx.cs">
+      <DependentUpon>ucAcciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucAcciones.ascx.designer.cs">
+      <DependentUpon>ucAcciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucCaptcha.ascx.cs">
+      <DependentUpon>ucCaptcha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucCaptcha.ascx.designer.cs">
+      <DependentUpon>ucCaptcha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucCategoriaPEP.ascx.cs">
+      <DependentUpon>ucCategoriaPEP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucCategoriaPEP.ascx.designer.cs">
+      <DependentUpon>ucCategoriaPEP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucDocumento.ascx.cs">
+      <DependentUpon>ucDocumento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucDocumento.ascx.designer.cs">
+      <DependentUpon>ucDocumento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucFecha.ascx.cs">
+      <DependentUpon>ucFecha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucFecha.ascx.designer.cs">
+      <DependentUpon>ucFecha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucFiscal.ascx.cs">
+      <DependentUpon>ucFiscal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucFiscal.ascx.designer.cs">
+      <DependentUpon>ucFiscal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucValidacion.ascx.cs">
+      <DependentUpon>ucValidacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucValidacion.ascx.designer.cs">
+      <DependentUpon>ucValidacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ucVinculoPEP.ascx.cs">
+      <DependentUpon>ucVinculoPEP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ucVinculoPEP.ascx.designer.cs">
+      <DependentUpon>ucVinculoPEP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\DJ11.cs" />
+    <Compile Include="Business\DJ10.cs" />
+    <Compile Include="Business\DJ09.cs" />
+    <Compile Include="Business\DJ08.cs" />
+    <Compile Include="Business\DJ05.cs" />
+    <Compile Include="Business\DJ07.cs" />
+    <Compile Include="Beneficiario.aspx.cs">
+      <DependentUpon>Beneficiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficiario.aspx.designer.cs">
+      <DependentUpon>Beneficiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditor.aspx.cs">
+      <DependentUpon>Auditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditor.aspx.designer.cs">
+      <DependentUpon>Auditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.aspx.cs">
+      <DependentUpon>Balance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Balance.aspx.designer.cs">
+      <DependentUpon>Balance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contador.aspx.cs">
+      <DependentUpon>Contador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contador.aspx.designer.cs">
+      <DependentUpon>Contador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\VinculoPEP.cs" />
+    <Compile Include="DataAccess\Tipos\TiposEstadoCivil.cs" />
+    <Compile Include="Entities\Contador.cs" />
+    <Compile Include="LibrosBal.aspx.cs">
+      <DependentUpon>LibrosBal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrosBal.aspx.designer.cs">
+      <DependentUpon>LibrosBal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros.aspx.cs">
+      <DependentUpon>Libros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros.aspx.designer.cs">
+      <DependentUpon>Libros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\TipoDocRubrica.cs" />
+    <Compile Include="EntidadC.aspx.cs">
+      <DependentUpon>EntidadC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntidadC.aspx.designer.cs">
+      <DependentUpon>EntidadC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\TipoAsamblea.cs" />
+    <Compile Include="Entities\Libro.cs" />
+    <Compile Include="Entities\Membrete.cs" />
+    <Compile Include="Entities\RepLegalBal.cs" />
+    <Compile Include="RepLegalBal.aspx.cs">
+      <DependentUpon>RepLegalBal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepLegalBal.aspx.designer.cs">
+      <DependentUpon>RepLegalBal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\TipoDictamen.cs" />
+    <Compile Include="DataAccess\Tipos\TiposCuentaBanco.cs" />
+    <Compile Include="DataAccess\Tipos\TiposInstrumento.cs" />
+    <Compile Include="DataAccess\Tipos\TiposValuacion.cs" />
+    <Compile Include="DataAccess\Tipos\TiposMonedas.cs" />
+    <Compile Include="DataAccess\Tipos\TiposDJ.cs" />
+    <Compile Include="EntidadF.aspx.cs">
+      <DependentUpon>EntidadF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntidadF.aspx.designer.cs">
+      <DependentUpon>EntidadF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Beneficiario.cs" />
+    <Compile Include="Entities\Auditor.cs" />
+    <Compile Include="Entities\Balance.cs" />
+    <Compile Include="Entities\PersonaPEP.cs" />
+    <Compile Include="Entities\RepLegal.cs" />
+    <Compile Include="Fideicomiso.aspx.cs">
+      <DependentUpon>Fideicomiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fideicomiso.aspx.designer.cs">
+      <DependentUpon>Fideicomiso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.aspx.cs">
+      <DependentUpon>Persona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Persona.aspx.designer.cs">
+      <DependentUpon>Persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepLegal.aspx.cs">
+      <DependentUpon>RepLegal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepLegal.aspx.designer.cs">
+      <DependentUpon>RepLegal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DDJJ11.cs">
+      <DependentUpon>DDJJ11.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\EntityReport\EntityDJ11.cs" />
+    <Compile Include="Reportes\DDJJ10.cs">
+      <DependentUpon>DDJJ10.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\DDJJ09.cs">
+      <DependentUpon>DDJJ09.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\DDJJ08.cs">
+      <DependentUpon>DDJJ08.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\EntityReport\EntityDJ10.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ09.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ08.cs" />
+    <Compile Include="DataAccess\Entidades\DDJJ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\TipoCargo.cs" />
+    <Compile Include="Entities\DomDig.cs" />
+    <Compile Include="Entities\Escribano.cs" />
+    <Compile Include="Escribano.aspx.cs">
+      <DependentUpon>Escribano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escribano.aspx.designer.cs">
+      <DependentUpon>Escribano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Tipos\CategoriaPEP.cs" />
+    <Compile Include="DataAccess\Tipos\SubCategoriaPEP.cs" />
+    <Compile Include="DataAccess\Tipos\TipoFiscal.cs" />
+    <Compile Include="DataAccess\Tipos\Tipos.cs" />
+    <Compile Include="DataAccess\Tipos\TiposDocumento.cs" />
+    <Compile Include="DataAccess\Tipos\TiposSocietario.cs" />
+    <Compile Include="Entities\AccionistaPJ.cs" />
+    <Compile Include="Entities\AccionistaPF.cs" />
+    <Compile Include="Entities\AccionistaAbstract.cs" />
+    <Compile Include="Entities\DomicilioInfo.cs" />
+    <Compile Include="Business\DJ04.cs" />
+    <Compile Include="Business\DJAbstract.cs" />
+    <Compile Include="Business\DJ03.cs" />
+    <Compile Include="Entities\Entidad.cs" />
+    <Compile Include="Business\EnumDJ.cs" />
+    <Compile Include="Entities\Legal.cs" />
+    <Compile Include="Entities\OrigenFondos.cs" />
+    <Compile Include="Entities\PersonaEP.cs" />
+    <Compile Include="Entities\Representante.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeDJ.aspx.cs">
+      <DependentUpon>HomeDJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeDJ.aspx.designer.cs">
+      <DependentUpon>HomeDJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="imgCaptcha.aspx.cs">
+      <DependentUpon>imgCaptcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imgCaptcha.aspx.designer.cs">
+      <DependentUpon>imgCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Legal.aspx.cs">
+      <DependentUpon>Legal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Legal.aspx.designer.cs">
+      <DependentUpon>Legal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\DJ.Master.cs">
+      <DependentUpon>DJ.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\DJ.Master.designer.cs">
+      <DependentUpon>DJ.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir.aspx.cs">
+      <DependentUpon>Imprimir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Imprimir.aspx.designer.cs">
+      <DependentUpon>Imprimir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entidad.aspx.cs">
+      <DependentUpon>Entidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entidad.aspx.designer.cs">
+      <DependentUpon>Entidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrigenFondos.aspx.cs">
+      <DependentUpon>OrigenFondos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrigenFondos.aspx.designer.cs">
+      <DependentUpon>OrigenFondos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DDJJ05.cs">
+      <DependentUpon>DDJJ05.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\DDJJ04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DDJJ04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\DDJJ07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DDJJ07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\EntityReport\EntityDJ02.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ05.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ06.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ04.cs" />
+    <Compile Include="Reportes\EntityReport\EntityDJ07.cs" />
+    <Compile Include="Representante.aspx.cs">
+      <DependentUpon>Representante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Representante.aspx.designer.cs">
+      <DependentUpon>Representante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaPEP.aspx.cs">
+      <DependentUpon>PersonaPEP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonaPEP.aspx.designer.cs">
+      <DependentUpon>PersonaPEP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EntityReport\EntityDJ03.cs" />
+    <Compile Include="Reportes\DDJJ03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DDJJ03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecurityModule.cs" />
+    <Compile Include="Seguridad\SessionSecurity.cs" />
+    <Compile Include="UsoGeneral\Captcha.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UsoGeneral\CharacterTreat.cs" />
+    <Compile Include="UsoGeneral\CodigoBarra.cs" />
+    <Compile Include="UsoGeneral\Combo.cs" />
+    <Compile Include="UsoGeneral\ConvertToDataTable.cs" />
+    <Compile Include="UsoGeneral\ValidarDomDig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validacion\ParametrosValidacion.cs" />
+    <Compile Include="Validacion\Validation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validar.aspx.cs">
+      <DependentUpon>Validar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validar.aspx.designer.cs">
+      <DependentUpon>Validar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSIGJGeneric\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSMotorDDJJ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\DJWorkFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\ucEmail.ascx" />
+    <Content Include="App_Controls\ucEstadoCivil.ascx" />
+    <Content Include="App_Controls\ucMontosCe.ascx" />
+    <Content Include="App_Controls\ucCUIT.ascx" />
+    <Content Include="App_Controls\ucFechaRub.ascx" />
+    <Content Include="App_Controls\ucAsamblea.ascx" />
+    <Content Include="App_Controls\ucMontosPesos.ascx" />
+    <Content Include="App_Controls\ucDictamen.ascx" />
+    <Content Include="App_Controls\ucCuentaBanco.ascx" />
+    <Content Include="App_Controls\ucNacionalidad.ascx" />
+    <Content Include="App_Controls\ucProfesion.ascx" />
+    <Content Include="App_Controls\ucValores.ascx" />
+    <Content Include="App_Controls\ucMontos.ascx" />
+    <Content Include="App_Controls\ucDomicilioReal.ascx" />
+    <Content Include="App_Controls\ucCargo.ascx" />
+    <Content Include="App_Controls\ucFechaNac.ascx" />
+    <Content Include="App_Controls\ucDomicilio.ascx" />
+    <Content Include="App_Controls\ucAcciones.ascx" />
+    <Content Include="App_Controls\ucCaptcha.ascx" />
+    <Content Include="App_Controls\ucCategoriaPEP.ascx" />
+    <Content Include="App_Controls\ucDocumento.ascx" />
+    <Content Include="App_Controls\ucFecha.ascx" />
+    <Content Include="App_Controls\ucFiscal.ascx" />
+    <Content Include="App_Controls\ucValidacion.ascx" />
+    <Content Include="App_Controls\ucVinculoPEP.ascx" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal11.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal03_old.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal10.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal09.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal08.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal02.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal07.htm" />
+    <Content Include="App_Theme\Cascading\AccionistaPJ.css" />
+    <Content Include="App_Theme\Cascading\AccionistaPF.css" />
+    <Content Include="App_Theme\Cascading\Beneficiario.css" />
+    <Content Include="App_Theme\Cascading\Backtotop.css" />
+    <Content Include="App_Theme\Cascading\LibrosBal.css" />
+    <Content Include="App_Theme\Cascading\Libros.css" />
+    <Content Include="App_Theme\Cascading\ucValores.css" />
+    <Content Include="App_Theme\Cascading\DomDig.css" />
+    <Content Include="App_Theme\Cascading\Escribano.css" />
+    <Content Include="App_Theme\Cascading\FormDesign.css" />
+    <Content Include="App_Theme\Cascading\Persona.css" />
+    <Content Include="App_Theme\Cascading\Representante.css" />
+    <Content Include="App_Theme\Cascading\ucBuscadorEnt.css" />
+    <Content Include="App_Theme\Cascading\ucDomicilio.css" />
+    <Content Include="App_Theme\Cascading\ucAccione.css" />
+    <Content Include="App_Theme\Cascading\Entidad.css" />
+    <Content Include="App_Theme\Cascading\HomeDJ.css" />
+    <Content Include="App_Theme\Cascading\Imprimir.css" />
+    <Content Include="App_Theme\Cascading\Legal.css" />
+    <Content Include="App_Theme\Cascading\MasterPage.css" />
+    <Content Include="App_Theme\Cascading\NotFound.css" />
+    <Content Include="App_Theme\Cascading\OrigenFondos.css" />
+    <Content Include="App_Theme\Cascading\PersonaOld.css" />
+    <Content Include="App_Theme\Cascading\RepresentanteOld.css" />
+    <Content Include="App_Theme\Cascading\ucCaptcha.css" />
+    <Content Include="App_Theme\Cascading\ucFiscal.css" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Theme\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Theme\css\smoothness\jquery-ui-1.8.20.custom.css" />
+    <Content Include="App_Theme\Imagenes\add.png" />
+    <Content Include="App_Theme\Imagenes\addTemp.png" />
+    <Content Include="App_Theme\Imagenes\ajax.gif" />
+    <Content Include="App_Theme\Imagenes\BannerDJ02.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ03.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ04.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ05.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ06.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ07.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ08.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ09.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ10.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ11.jpg" />
+    <Content Include="App_Theme\Imagenes\BannerDJ12.jpg" />
+    <Content Include="App_Theme\Imagenes\barragris.jpg" />
+    <Content Include="App_Theme\Imagenes\barrazul.jpg" />
+    <Content Include="App_Theme\Imagenes\black_arrow.png" />
+    <Content Include="App_Theme\Imagenes\btnbuscar.png" />
+    <Content Include="App_Theme\Imagenes\btnbuscarnueva.png" />
+    <Content Include="App_Theme\Imagenes\btncalcular.png" />
+    <Content Include="App_Theme\Imagenes\btncalcularh.png" />
+    <Content Include="App_Theme\Imagenes\btncancelar.png" />
+    <Content Include="App_Theme\Imagenes\btncaptcha.png" />
+    <Content Include="App_Theme\Imagenes\btnconfirmar.png" />
+    <Content Include="App_Theme\Imagenes\btnconfirmarh.png" />
+    <Content Include="App_Theme\Imagenes\btncontinuar.png" />
+    <Content Include="App_Theme\Imagenes\btncontinuard.png" />
+    <Content Include="App_Theme\Imagenes\btncontinuarh.png" />
+    <Content Include="App_Theme\Imagenes\btnDescargar.png" />
+    <Content Include="App_Theme\Imagenes\btnguardar.png" />
+    <Content Include="App_Theme\Imagenes\btnimprimir.png" />
+    <Content Include="App_Theme\Imagenes\btninfocaptcha.png" />
+    <Content Include="App_Theme\Imagenes\btnNuevaDJ.png" />
+    <Content Include="App_Theme\Imagenes\btnreader.jpg" />
+    <Content Include="App_Theme\Imagenes\btnrecargar.png" />
+    <Content Include="App_Theme\Imagenes\btnrecargarcaptcha.png" />
+    <Content Include="App_Theme\Imagenes\btnvacio.png" />
+    <Content Include="App_Theme\Imagenes\btnvalidar.png" />
+    <Content Include="App_Theme\Imagenes\btnvolver.png" />
+    <Content Include="App_Theme\Imagenes\btnvolverh.png" />
+    <Content Include="App_Theme\Imagenes\Buscar.png" />
+    <Content Include="App_Theme\Imagenes\CambioDomDigCuadroCenterBack.png" />
+    <Content Include="App_Theme\Imagenes\CambioDomDigCuadroDivisor.png" />
+    <Content Include="App_Theme\Imagenes\CambioDomDigRepreCuadroHeader.png" />
+    <Content Include="App_Theme\Imagenes\ContendorCab.png" />
+    <Content Include="App_Theme\Imagenes\ContenedorCuerpo.png" />
+    <Content Include="App_Theme\Imagenes\correoargentino.JPG" />
+    <Content Include="App_Theme\Imagenes\CuadroBusEntCentro.jpg" />
+    <Content Include="App_Theme\Imagenes\CuadroBusEntError.jpg" />
+    <Content Include="App_Theme\Imagenes\CuadroBusEntFooter.jpg" />
+    <Content Include="App_Theme\Imagenes\CuadroBusEntHeader.jpg" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaCentro.png" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaError.png" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaFooter.png" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaHeader.png" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaImg.png" />
+    <Content Include="App_Theme\Imagenes\CuadroCaptchaTxt.png" />
+    <Content Include="App_Theme\Imagenes\btndatepicker.gif" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterCOGV.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterEXT.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterFiscal.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterGV.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterNC.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroHeaderGV.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroTituloGV.png" />
+    <Content Include="App_Theme\Imagenes\enconstruccion.png" />
+    <Content Include="App_Theme\Imagenes\FooterDJa.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJb.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJnewa.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJnewa_old.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJnewb.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJnewb_old.jpg" />
+    <Content Include="App_Theme\Imagenes\hover.png" />
+    <Content Include="App_Theme\Imagenes\iconotiposoc.jpg" />
+    <Content Include="App_Theme\Imagenes\IGJLoad.gif" />
+    <Content Include="App_Theme\Imagenes\IGJLoading.gif" />
+    <Content Include="App_Theme\Imagenes\imgAstAzul.png" />
+    <Content Include="App_Theme\Imagenes\imgCargando.gif" />
+    <Content Include="App_Theme\Imagenes\imgInterroga.png" />
+    <Content Include="App_Theme\Imagenes\imgLupa.png" />
+    <Content Include="App_Theme\Imagenes\imgMas.png" />
+    <Content Include="App_Theme\Imagenes\Login_Separador.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoConvos.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ02.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ03.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ04.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ04_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ05.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ06.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ07.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ08.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ09.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ10.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ11.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ_old.jpg" />
+    <Content Include="App_Theme\Imagenes\DescAcrobat.png" />
+    <Content Include="App_Theme\Imagenes\favicon.ico" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterCOG.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterG.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroHeaderG.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroTituloG.png" />
+    <Content Include="App_Theme\Imagenes\DJValidCenter.png" />
+    <Content Include="App_Theme\Imagenes\DJValidFooter.png" />
+    <Content Include="App_Theme\Imagenes\DJValidHeader.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooter.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroFooterCO.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroHeader.png" />
+    <Content Include="App_Theme\Imagenes\DJCuadroBack.png" />
+    <Content Include="App_Theme\Imagenes\espacio.jpg" />
+    <Content Include="App_Theme\Imagenes\Find.png" />
+    <Content Include="App_Theme\Imagenes\fondoheadermenu.jpg" />
+    <Content Include="App_Theme\Imagenes\fondolinea.jpg" />
+    <Content Include="App_Theme\Imagenes\fondolineader.jpg" />
+    <Content Include="App_Theme\Imagenes\fondolineaizq.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJDD.jpg" />
+    <Content Include="App_Theme\Imagenes\FooterDJDDOld.jpg" />
+    <Content Include="App_Theme\Imagenes\icononumeral.jpg" />
+    <Content Include="App_Theme\Imagenes\iconousuario.jpg" />
+    <Content Include="App_Theme\Imagenes\imgAsterisco.png" />
+    <Content Include="App_Theme\Imagenes\LoginCuadroCenterBack.png" />
+    <Content Include="App_Theme\Imagenes\Login_Mensajes.jpg" />
+    <Content Include="App_Theme\Imagenes\Login_MenuPrincipal.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoBicentenario.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ03_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ05_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ06_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ09_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ10_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoIGJ120.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoIGJNuevo.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoIGJNuevo_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoIGJNuevo120.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoMinJusIGJ.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoMinJusIGJ_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ07_old.jpg" />
+    <Content Include="App_Theme\Imagenes\LogoDJ08_old.jpg" />
+    <Content Include="App_Theme\Imagenes\Ministerio.png" />
+    <Content Include="App_Theme\Imagenes\paso_1.png" />
+    <Content Include="App_Theme\Imagenes\paso_1s.png" />
+    <Content Include="App_Theme\Imagenes\paso_2.png" />
+    <Content Include="App_Theme\Imagenes\paso_2s.png" />
+    <Content Include="App_Theme\Imagenes\paso_3.png" />
+    <Content Include="App_Theme\Imagenes\paso_3f.png" />
+    <Content Include="App_Theme\Imagenes\paso_3s.png" />
+    <Content Include="App_Theme\Imagenes\paso_4.png" />
+    <Content Include="App_Theme\Imagenes\paso_4f.png" />
+    <Content Include="App_Theme\Imagenes\paso_4s.png" />
+    <Content Include="App_Theme\Imagenes\paso_5.png" />
+    <Content Include="App_Theme\Imagenes\paso_5f.png" />
+    <Content Include="App_Theme\Imagenes\paso_5s.png" />
+    <Content Include="App_Theme\Imagenes\paso_6.png" />
+    <Content Include="App_Theme\Imagenes\paso_6f.png" />
+    <Content Include="App_Theme\Imagenes\paso_6s.png" />
+    <Content Include="App_Theme\Imagenes\paso_7.png" />
+    <Content Include="App_Theme\Imagenes\paso_7f.png" />
+    <Content Include="App_Theme\Imagenes\paso_7s.png" />
+    <Content Include="App_Theme\Imagenes\paso_8.png" />
+    <Content Include="App_Theme\Imagenes\paso_8f.png" />
+    <Content Include="App_Theme\Imagenes\paso_8s.png" />
+    <Content Include="App_Theme\Imagenes\paso_linea.png" />
+    <Content Include="App_Theme\Imagenes\reload.png" />
+    <Content Include="App_Theme\Imagenes\snapdjdd.png" />
+    <Content Include="App_Theme\Imagenes\toparrow.png" />
+    <Content Include="App_Theme\Scripts\Backtotop.js" />
+    <Content Include="App_Theme\Scripts\Datepicker.js" />
+    <Content Include="App_Theme\Scripts\DatepickerNac.js" />
+    <Content Include="App_Theme\Scripts\jquery-1.7.2.min.js" />
+    <Content Include="App_Theme\Scripts\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="App_Theme\Scripts\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="App_Theme\Scripts\jquery.ui.datepicker-es.js" />
+    <Content Include="App_Theme\Scripts\jqueryTooltip.js" />
+    <Content Include="App_Theme\Scripts\Tooltip.js" />
+    <Content Include="Beneficiario.aspx" />
+    <Content Include="Auditor.aspx" />
+    <Content Include="Balance.aspx" />
+    <Content Include="Contador.aspx" />
+    <Content Include="LibrosBal.aspx" />
+    <Content Include="Libros.aspx" />
+    <Content Include="EntidadC.aspx" />
+    <Content Include="RepLegalBal.aspx" />
+    <Content Include="EntidadF.aspx" />
+    <Content Include="Fideicomiso.aspx" />
+    <Content Include="Escribano.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomeDJ.aspx" />
+    <Content Include="imgCaptcha.aspx" />
+    <Content Include="Imprimir.aspx" />
+    <Content Include="Entidad.aspx" />
+    <Content Include="Legal.aspx" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal06.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal03.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal04.htm" />
+    <Content Include="App_Data\MarcoLegal\MarcoLegal05.htm" />
+    <Content Include="NotFound.aspx" />
+    <Content Include="OrigenFondos.aspx" />
+    <Content Include="Persona.aspx" />
+    <Content Include="RepLegal.aspx" />
+    <Content Include="Representante.aspx" />
+    <Content Include="PersonaPEP.aspx" />
+    <Content Include="MasterPages\DJ.Master" />
+    <Content Include="Validar.aspx" />
+    <None Include="Web References\WSMotorDDJJ\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSMotorDDJJ\WS-MOTOR-DDJJ.disco" />
+    <None Include="Web References\WSIGJGeneric\Entidad.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSIGJGeneric\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSIGJGeneric\WS-IGJ-Generic.disco" />
+    <None Include="Web References\WSIGJGeneric\WS-IGJ-Generic.wsdl" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSMotorDDJJ\WS-MOTOR-DDJJ.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSMotorDDJJ\</RelPath>
+      <UpdateFromURL>http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DJEngine_WSMotorDDJJ_WS_MOTOR_DDJJ</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSIGJGeneric\</RelPath>
+      <UpdateFromURL>http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DJEngine_WSIGJGeneric_IGJ_Generic</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\DDJJ11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ09.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ09.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ08.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ08.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DDJJ07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DDJJ07.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27605</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

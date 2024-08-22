@@ -1,0 +1,47 @@
+﻿body {}
+
+.cabezaResumen 
+{
+	background-image: url('/App_Theme/Imagenes/ContendorCab.png');	
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	height: 29px;
+	font-size: smaller;
+	text-align: left;	
+}
+
+.tablaResumen
+{
+	background-image: url('/App_Theme/Imagenes/ContenedorCuerpo.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	font-size: smaller;
+	text-align: left;
+}
+
+.tablaResumen span {color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+
+.WorkFlowButtons .btnVolver {margin-top: 50px;margin-left: 180px;}
+.WorkFlowButtons .btnConfirmar {margin-top: 50px;}
+
+.CuadroCaptcha .lblCaptcha {text-align: center;color: #303030;font-family: Arial;font-size: 12px;font-weight: normal; }
+.CuadroCaptcha .txtCaptcha {text-align: center;height: 26px; width:155px;color: #303030;font-family: Arial;font-size: 24px;font-weight: normal;}
+
+.DJCuadroCentro {}
+
+.DJCuadroHeader .CuadroTitulo {background:url(/App_Theme/Imagenes/DJCuadroBack.png);width:625px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 4px;}
+.DJCuadroCentro label {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro {background:url(/App_Theme/Imagenes/DJCuadroBack.png); width:625px;}
+.DJCuadroCentro .Asterisco {padding: 6px 0 0 8px;float: left;}
+.DJCuadroCentro .CambioDomDigCodVal .Asterisco {margin-right: -35px;}
+.CambioDomDigCuadradoFooter {background:url(/App_Theme/Imagenes/DJCuadroFooter.png);height:55px;width:625px;}
+
+/*--Empieza Paso 3 del Representante--*/
+.DJCuadroCentro .CambioDomDigNuevoRepre span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro .DJCuadroPresen span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro .DJCuadroPresen input {float: left;}
+.DJCuadroCentro .DJCuadroPresen select {float: left;}
+/*--Termina Paso 3 del Representante--*/

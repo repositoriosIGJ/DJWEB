@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListTabGen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipotabla" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTabGenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListTabGenResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NroCorrelativo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadPOO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NroCorrelativo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadPOOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadPOOResult" type="tns:Entidad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Entidad">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NroCorrelativo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cuit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoSocId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoSoc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSociedadbyCUIT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NroCUIT" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadbyCUITResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadbyCUITResult" type="tns:Entidad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesPOO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesPOOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadesPOOResult" type="tns:ArrayOfEntidad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEntidad">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Entidad" nillable="true" type="tns:Entidad" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSociedades">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadFiltradoTipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NroCorrelativo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoSoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadFiltradoTipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadFiltradoTipoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadFiltradoTipoPOO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NroCorrelativo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoSoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadFiltradoTipoPOOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadFiltradoTipoPOOResult" type="tns:ArrayOfEntidad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesFiltradoTipoPOO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoSoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesFiltradoTipoPOOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadesFiltradoTipoPOOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesFiltradoTipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoSoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesFiltradoTipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadesFiltradoTipoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEsquemaValidacionSistema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Sistema" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEsquemaValidacionSistemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEsquemaValidacionSistemaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesAutocomplete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSociedadesAutocompleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSociedadesAutocompleteResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListTabGenSoapIn">
+    <wsdl:part name="parameters" element="tns:ListTabGen" />
+  </wsdl:message>
+  <wsdl:message name="ListTabGenSoapOut">
+    <wsdl:part name="parameters" element="tns:ListTabGenResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedad" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadPOOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadPOO" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadPOOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadPOOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadbyCUITSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadbyCUIT" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadbyCUITSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadbyCUITResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesPOOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadesPOO" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesPOOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadesPOOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedades" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadFiltradoTipoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadFiltradoTipo" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadFiltradoTipoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadFiltradoTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadFiltradoTipoPOOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadFiltradoTipoPOO" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadFiltradoTipoPOOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadFiltradoTipoPOOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesFiltradoTipoPOOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadesFiltradoTipoPOO" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesFiltradoTipoPOOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadesFiltradoTipoPOOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesFiltradoTipoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadesFiltradoTipo" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesFiltradoTipoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadesFiltradoTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEsquemaValidacionSistemaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEsquemaValidacionSistema" />
+  </wsdl:message>
+  <wsdl:message name="GetEsquemaValidacionSistemaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEsquemaValidacionSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesAutocompleteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSociedadesAutocomplete" />
+  </wsdl:message>
+  <wsdl:message name="GetSociedadesAutocompleteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSociedadesAutocompleteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGJ_GenericSoap">
+    <wsdl:operation name="ListTabGen">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Tabla de Tipos TabGen</wsdl:documentation>
+      <wsdl:input message="tns:ListTabGenSoapIn" />
+      <wsdl:output message="tns:ListTabGenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedad">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Buscar una Sociedad por Numero correlativo</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadSoapIn" />
+      <wsdl:output message="tns:GetSociedadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadPOO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Buscar una Sociedad por Numero correlativo</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadPOOSoapIn" />
+      <wsdl:output message="tns:GetSociedadPOOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadbyCUIT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Buscar una Sociedad por CUIT</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadbyCUITSoapIn" />
+      <wsdl:output message="tns:GetSociedadbyCUITSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesPOO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listar Sociedades por Razon Social POO</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadesPOOSoapIn" />
+      <wsdl:output message="tns:GetSociedadesPOOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedades">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listar Sociedades por Razon Social</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadesSoapIn" />
+      <wsdl:output message="tns:GetSociedadesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listar Sociedades por Numero correlativo y Numero Societario</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadFiltradoTipoSoapIn" />
+      <wsdl:output message="tns:GetSociedadFiltradoTipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipoPOO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listar Sociedades por Numero correlativo y Numero Societario</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadFiltradoTipoPOOSoapIn" />
+      <wsdl:output message="tns:GetSociedadFiltradoTipoPOOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipoPOO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Sociedades por Razon Social y Tipo Societario</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadesFiltradoTipoPOOSoapIn" />
+      <wsdl:output message="tns:GetSociedadesFiltradoTipoPOOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Sociedades por Razon Social y Tipo Societario</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadesFiltradoTipoSoapIn" />
+      <wsdl:output message="tns:GetSociedadesFiltradoTipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEsquemaValidacionSistema">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tabla de Validaciones x Sistema x Formularios</wsdl:documentation>
+      <wsdl:input message="tns:GetEsquemaValidacionSistemaSoapIn" />
+      <wsdl:output message="tns:GetEsquemaValidacionSistemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesAutocomplete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listar Sociedades para autocomplete</wsdl:documentation>
+      <wsdl:input message="tns:GetSociedadesAutocompleteSoapIn" />
+      <wsdl:output message="tns:GetSociedadesAutocompleteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IGJ_GenericSoap" type="tns:IGJ_GenericSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListTabGen">
+      <soap:operation soapAction="http://tempuri.org/ListTabGen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedad">
+      <soap:operation soapAction="http://tempuri.org/GetSociedad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadPOO">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadPOO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadbyCUIT">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadbyCUIT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesPOO">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadesPOO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedades">
+      <soap:operation soapAction="http://tempuri.org/GetSociedades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipo">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadFiltradoTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipoPOO">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadFiltradoTipoPOO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipoPOO">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadesFiltradoTipoPOO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipo">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadesFiltradoTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEsquemaValidacionSistema">
+      <soap:operation soapAction="http://tempuri.org/GetEsquemaValidacionSistema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesAutocomplete">
+      <soap:operation soapAction="http://tempuri.org/GetSociedadesAutocomplete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IGJ_GenericSoap12" type="tns:IGJ_GenericSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListTabGen">
+      <soap12:operation soapAction="http://tempuri.org/ListTabGen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedad">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadPOO">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadPOO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadbyCUIT">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadbyCUIT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesPOO">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadesPOO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedades">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedades" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipo">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadFiltradoTipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadFiltradoTipoPOO">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadFiltradoTipoPOO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipoPOO">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadesFiltradoTipoPOO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesFiltradoTipo">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadesFiltradoTipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEsquemaValidacionSistema">
+      <soap12:operation soapAction="http://tempuri.org/GetEsquemaValidacionSistema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSociedadesAutocomplete">
+      <soap12:operation soapAction="http://tempuri.org/GetSociedadesAutocomplete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IGJ_Generic">
+    <wsdl:port name="IGJ_GenericSoap" binding="tns:IGJ_GenericSoap">
+      <soap:address location="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IGJ_GenericSoap12" binding="tns:IGJ_GenericSoap12">
+      <soap12:address location="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

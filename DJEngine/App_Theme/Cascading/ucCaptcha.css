@@ -1,0 +1,51 @@
+﻿/*--Empieza Captcha--*/
+.CuadroCaptchaCentro .divimgCaptcha {background:url(../../App_Theme/Imagenes/CuadroCaptchaImg.png);display:block;width: 228px;height: 82px;}
+.CuadroCaptchaCentro .imgCaptcha {display: block;margin-left: 14px;padding: 1px 0px 0px 0px;}
+.CuadroCaptchaCentro .divtxtucCaptcha {background:url(../../App_Theme/Imagenes/CuadroCaptchaTxt.png);display:block;width: 228px;height: 47px;}/*margin-top: -16px;}*/
+.CuadroCaptchaCentro .txtucCaptcha {margin-left: 16px;margin-top: 8px;text-align: center;display:block;height: 22px; width:135px;color: #303030;font-family: Arial;font-size: 20px;}
+.CuadroCaptchaCentro .btnRecargar {display: block;margin-left: 29px;margin-top: -7px;}
+.CuadroCaptchaCentro .btnInfo {display: block;margin-left: 29px;margin-top: -20px;}
+/*.CuadroCaptchaCentro .Asterisco {padding: 12px 0 0 0px;float: right;margin-right: -10px;}*/
+.CuadroCaptchaCentro .imgAsterisco {display: block;margin-left: 8px;margin-top: -20px;color:red;font-family:Arial;font-size:20px;font-weight: Normal;float: left; height: 15px;} /*padding: 4px 0 0 8px;}*/
+/*.CuadroCaptcha .lblCaptchaError {font-family:Calibri;font-size:12px;letter-spacing: 1px;font-weight: bold;
+                                     border: 2px solid #00CC00;border-radius: 7px 7px 7px 7px; clear: both; color:#ffffff; 
+                                     padding: 2px 0px 4px 0px; background: #db2424; border-color: #db2424;float:left;}*/
+.CuadroCaptchaError {background:url(../../App_Theme/Imagenes/CuadroCaptchaError.png);display:block;width: 228px;height: 26px;}
+.CuadroCaptchaError .lblCaptchaError {font-family:Calibri;font-weight: bold;color:#ffffff;font-size:12px;letter-spacing: 1px;font-weight: bold;display: block;padding: 8px 0px 0px 0px;}/*background: #db2424;}*/
+/*--Termina Captcha--*/
+
+/*-- Empieza Hacks para Sólo IE7 --*/
+.CuadroCaptchaHeader {*margin-bottom:-7px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .divimgCaptcha {*margin-bottom:-8px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .ImgSeparador {*margin-bottom:-4px !important;} /* Sólo IE7 */
+.CuadroCaptchaFooter {*margin-top:-7px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .btnRecargar {*margin-left:24px !important;*margin-top:-3px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .btnInfo {*margin-left:24px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .imgCaptcha {*margin-left:0px !important;} /* Sólo IE7 */
+.CuadroCaptchaCentro .txtucCaptcha {width:132px;}
+.CuadroCaptchaError {*margin-bottom:3px !important;} /* Sólo IE7 */
+/*-- Termina Hacks para Sólo IE7 --*/
+
+/*--Empieza Error Validacion--*/
+.divtxtucCaptcha .imgCruz 
+{
+    color: red;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -24px;
+    padding: 2px 0 0 9px;
+}
+/*--Termina Error Validacion--*/
+
+/*--Empieza efectos para textbox--*/ /*solo para FireFox*/
+.CuadroCaptchaCentro .txtucCaptcha {border:1px solid #a5acb2;border-radius: 3px 3px 3px 3px;}
+.CuadroCaptchaCentro .txtucCaptcha:focus {
+    border-color: #56B4EF;
+    color: #333333;
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    border-radius: 3px 3px 3px 3px;
+}
+/*--Termina efectos para textbox--*/

@@ -1,0 +1,41 @@
+E:\Repositorio\DJEngine\Trunk\DJEngine\bin\DJEngine.dll
+E:\Repositorio\DJEngine\Trunk\DJEngine\bin\DJEngine.pdb
+E:\Repositorio\DJEngine\Trunk\DJEngine\bin\itextsharp.dll
+E:\Repositorio\DJEngine\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+E:\Repositorio\DJEngine\Trunk\DJEngine\obj\Debug\DJEngine.dll
+E:\Repositorio\DJEngine\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\bin\DJEngine.dll
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\bin\DJEngine.pdb
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\bin\itextsharp.dll
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\obj\Debug\DJEngine.dll
+C:\TortoiseSVN\DJEngine\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\bin\DJEngine.dll
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\bin\DJEngine.pdb
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\bin\itextsharp.dll
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\DJEngine.dll
+C:\TortoiseSVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+C:\SVN\DJEngine_v31\Trunk\DJEngine\bin\DJEngine.dll
+C:\SVN\DJEngine_v31\Trunk\DJEngine\bin\DJEngine.pdb
+C:\SVN\DJEngine_v31\Trunk\DJEngine\bin\itextsharp.dll
+C:\SVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\DJEngine.dll
+C:\SVN\DJEngine_v31\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+C:\SVN\DJEngine_v41\Trunk\DJEngine\bin\DJEngine.dll
+C:\SVN\DJEngine_v41\Trunk\DJEngine\bin\DJEngine.pdb
+C:\SVN\DJEngine_v41\Trunk\DJEngine\bin\itextsharp.dll
+C:\SVN\DJEngine_v41\Trunk\DJEngine\bin\QRCoder.dll
+C:\SVN\DJEngine_v41\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\DJEngine_v41\Trunk\DJEngine\obj\Debug\DJEngine.dll
+C:\SVN\DJEngine_v41\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+D:\Desarrollo\Trunk\DJEngine\bin\DJEngine.dll
+D:\Desarrollo\Trunk\DJEngine\bin\DJEngine.pdb
+D:\Desarrollo\Trunk\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+D:\Desarrollo\Trunk\DJEngine\obj\Debug\DJEngine.dll
+D:\Desarrollo\Trunk\DJEngine\obj\Debug\DJEngine.pdb
+D:\Desarrollo\DJ v23\DJEngine\bin\DJEngine.dll
+D:\Desarrollo\DJ v23\DJEngine\bin\DJEngine.pdb
+D:\Desarrollo\DJ v23\DJEngine\obj\Debug\ResolveAssemblyReference.cache
+D:\Desarrollo\DJ v23\DJEngine\obj\Debug\DJEngine.dll
+D:\Desarrollo\DJ v23\DJEngine\obj\Debug\DJEngine.pdb

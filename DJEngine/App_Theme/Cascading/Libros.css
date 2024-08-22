@@ -1,0 +1,8 @@
+﻿body {}
+/*.btnGuardarRubrica
+.DJCuadroCentro input*/
+.DJCuadroCentro .btnGuardarRubrica
+{
+    float: none;
+	text-align: center;	
+}

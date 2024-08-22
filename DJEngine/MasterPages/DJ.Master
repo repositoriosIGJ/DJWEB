@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DJ.master.cs" Inherits="DJEngine.MasterPages.DJ" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <link type="text/css" rel="stylesheet" href="../App_Theme/Cascading/FormDesign.css"/>
+    <link type="text/css" rel="stylesheet" href="../App_Theme/Cascading/MasterPage.css"/>
+    <link type="text/css" rel="stylesheet" href="../App_Theme/css/smoothness/jquery-ui-1.8.20.custom.css"/>
+    <link type="text/css" rel="stylesheet" href="../App_Theme/Cascading/Backtotop.css"/> 
+    <link type="image/x-icon" rel="icon" href="../App_theme/Imagenes/favicon.ico"/>      
+    <script type="text/javascript" src="./App_Theme/Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./App_Theme/Scripts/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="./App_Theme/Scripts/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="./App_Theme/Scripts/Datepicker.js"></script>
+    <script type="text/javascript" src="./App_Theme/Scripts/DatepickerNac.js"></script> 
+    <script type="text/javascript" src="./App_Theme/Scripts/Backtotop.js"></script>    
+    <title>Declaraciones Juradas</title>
+</head>
+<body id="body" runat="server">
+     <form id="form1" runat="server">
+     <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+     </asp:ToolkitScriptManager>
+     
+     <input type="hidden" id="testBox" runat="server" value="no" />
+
+     <script type="text/javascript" language="javascript">                         
+      document.getElementById("<%=testBox.ClientID%>").value = "yes";
+      javascript: window.history.forward(1);
+
+      $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+      
+     </script>
+     
+     <!-- Volver al Principio de la Pagina -->
+     <a href="#" class="back-to-top">Back to Top</a>
+
+     <div class="Master">
+     <center>
+        <!-- Comienza Header -->
+        <div class="MasterHeader">            
+            <center>
+                <tr>
+                    <td>
+                        <asp:Image ID="LogoDJ" runat="server" alt="Logo DJ" ImageUrl="~/App_Theme/Imagenes/LogoDJ.jpg"/>                        
+                    </td>
+                    <td>
+                        <img alt="Logo de la Inspección General de Justicia" src="./App_Theme/Imagenes/LogoIGJNuevo.jpg"/>
+                    </td>
+                    <td>
+                        <%--<img alt="Logo del Bicentenario Argentino" src="./App_Theme/Imagenes/LogoIGJNuevo.jpg"/>--%>
+                        <img alt="Logo del Ministerio de Justicia" src="./App_Theme/Imagenes/LogoMinJusIGJ.jpg"/>
+                        <%--<img alt="Argentina con vos, Siempre" src="./App_Theme/Imagenes/LogoConvos.jpg"/>--%>
+                    </td>
+                </tr>
+            </center>
+        </div>
+        <!-- Termina Header -->
+        <!-- Comienza Menu -->
+        <div class="MasterMenu">
+            <center>
+                <div class="MasterMenuPrincipal">
+                     <%--<label >DECLARACION JURADA (Res. Nro. 02/2012) - PERSONAS EXPUESTAS POLITICAMENTE</label>--%>
+                     <%--<label id="BarraDJ" runat="server">SELECCION DE DECLARACIONES JURADAS</label>--%>
+                    <asp:Label ID="BarraDJ" runat="server" Text="SISTEMA DE DECLARACIONES JURADAS"></asp:Label>
+                </div>                
+            </center>
+        </div>
+        <!-- Termina Menu -->
+        <div class="MasterInside">
+        <%-- Empieza Panel de Pasos --%>
+            <div id="divPasos" runat="server" class="divPasos">
+                <br />
+                <asp:Image ID="ImgPaso_1" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_1.png" Visible="false" />
+                <asp:Image ID="ImgLinea_2" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_2" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_2.png" Visible="false" />
+                <asp:Image ID="ImgLinea_3" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_3" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_3.png" Visible="false" />
+                <asp:Image ID="ImgLinea_4" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_4" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_4.png" Visible="false" />
+                <asp:Image ID="ImgLinea_5" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_5" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_5.png" Visible="false" />
+                <asp:Image ID="ImgLinea_6" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_6" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_6.png" Visible="false" />
+                <asp:Image ID="ImgLinea_7" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_7" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_6.png" Visible="false" />
+                <asp:Image ID="ImgLinea_8" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_linea.png" Visible="false" />
+                <asp:Image ID="ImgPaso_8" runat="server" ImageUrl="~/App_Theme/Imagenes/paso_6f.png" Visible="false" />
+                <br />
+            </div>
+        <%-- Termina Panel de Pasos --%>
+                <asp:ContentPlaceHolder ID="MasterPage" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+        <%-- Comienza Footer --%>
+        <div class="MasterFooter">
+            <div class="FooterA">
+                <asp:Label ID="lblFooterA" runat="server" Text="Sistema de Declaraciones Juradas"></asp:Label>
+            </div>
+            <div class="FooterB">
+                <%--<asp:Image ID="ImgFooterB" alt="Pie de Pagina DJ" runat="server" ImageUrl="~/App_Theme/Imagenes/FooterDJb.jpg" />--%>
+            </div>
+        </div>
+        <%-- Termina Footer --%>
+        </center>
+      </div>
+     
+     </form>
+</body>
+</html>

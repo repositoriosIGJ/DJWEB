@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DJEngine.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DJEngine_WSIGJGeneric_IGJ_Generic" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx</Value>
+    </Setting>
+    <Setting Name="DJEngine_WSMotorDDJJ_WS_MOTOR_DDJJ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

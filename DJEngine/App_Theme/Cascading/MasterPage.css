@@ -1,0 +1,63 @@
+﻿body {}
+
+.Master {width:1200px;}
+
+.MasterHeaderMenu {height:22px;width:1200px;background:url(../../App_Theme/Imagenes/fondoheadermenu.jpg) repeat; margin-top: -7px;}
+.MasterHeaderMenu label {color:#5b5b5b;font-family:Arial;font-size:12px;font-weight: bold;}
+.MasterHeaderMenu .HeaderMenuLeft {position:relative;float:Left;padding:1px 0px;}
+.MasterHeaderMenu .HeaderMenuRight{position:relative;float:right;padding:1px 0px;}
+
+.MasterHeader {height:120px;width:1200px;margin-top: 1px;}
+.MasterHeader img {padding:0 40px 0 40px;}
+
+.MasterMenu {width:1200px;}
+.MasterMenu .MasterMenuPrincipal {background-image: url(../../App_Theme/Imagenes/barrazul.jpg); background-repeat: no-repeat; height: auto; padding:6px 0px;}
+.MasterMenu .MasterMenuPrincipal label {color: #FFFFFF;font-family: Arial;font-size: 15px;font-weight: bold;letter-spacing: 4px;}
+.MasterMenu .MasterMenuPrincipal span {color: #FFFFFF;font-family: Arial;font-size: 15px;font-weight: bold;letter-spacing: 4px;}
+.MasterMenu .MasterMenuSubmenu {background:url(../../App_Theme/Imagenes/barragris.jpg); background-repeat: no-repeat; height: auto; padding:2px 0px;}
+.MasterMenu .MasterMenuSubmenu label {color:#000000;font-family:Arial;font-size:10px;font-weight: bold;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 80px;}
+
+.MasterInside {width:1054px;background:url(../../App_Theme/Imagenes/fondolinea.jpg) repeat;}
+
+/*--Empieza Footer--*/
+/*.MasterFooter {width:1077px;margin-left:0px;}*/
+.MasterFooter .FooterA {background-image: url("../../App_Theme/Imagenes/FooterDJnewa.jpg");
+                        background-repeat: no-repeat;
+                        margin-left: -2px;
+                        height: 55px;                        
+                        width: 1070px;}
+.MasterFooter .FooterA {width: 1070px;}
+.MasterFooter .FooterA span {color: #6a6a6a;font-family: Arial;font-size: 14px;font-weight: bold;display:block;padding:35px 40px 0px 0px;text-align: right;letter-spacing: 0.5px;}
+.MasterFooter .FooterB {background-image: url("../../App_Theme/Imagenes/FooterDJnewb.jpg");
+                        background-repeat: no-repeat;
+						margin-left: -2px;height: 75px;width:1070px;}
+/*--Termina Footer--*/
+
+/*--Empieza Div de Pasos--*/
+.divPasos {margin-bottom: 30px;margin-left: 370px;}
+.divPasos img {float: left;}
+/*--Termina Div de Pasos--*/
+
+/*-- Empieza ToolTip --*/
+.tooltipTitle {
+font-weight: bold;
+color:#FF9900;
+}
+#tooltip {
+position: absolute;
+padding: 4px;
+color: #FFF;
+font-family:Calibri, Arial, Helvetica, sans-serif;
+font-size: 12px;
+display: none;
+text-align: left;
+background-color: #00719b;
+opacity: 0.8;
+-moz-opacity: 0.8;
+filter: alpha(opacity=90);
+letter-spacing: 1px;
+border-radius: 4px 4px 4px 4px;
+/*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);*/
+border:1px solid #0099cb;
+}
+/*-- Termina ToolTip --*/

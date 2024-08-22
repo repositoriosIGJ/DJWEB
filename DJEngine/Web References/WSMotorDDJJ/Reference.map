@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx?disco" filename="WS-MOTOR-DDJJ.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx?wsdl" filename="WS-MOTOR-DDJJ.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

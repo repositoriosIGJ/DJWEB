@@ -1,0 +1,144 @@
+﻿body {}
+
+.cabezaResumen 
+{
+	background-image: url(../../App_Theme/Imagenes/ContendorCab.png);	
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	height: 29px;
+	font-size: smaller;
+	text-align: left;	
+}
+
+.tablaResumen
+{
+	background-image: url(../../App_Theme/Imagenes/ContenedorCuerpo.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	font-size: smaller;
+	text-align: left;
+}
+
+.tablaResumen span {color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+
+/*--Empieza efectos para Botones--*/
+.btnContinuarEF
+{
+	display:inline-block;
+	width:134px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnContinuar.png);
+	margin-top: 10px;
+}
+.btnContinuarEF:hover, WorkFlowButtons .btnconfirmar:focus 
+{
+	display:inline-block;
+	width:134px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnContinuarh.png);
+	margin-top: 10px;
+}
+.btnConfirmarEF
+{
+	display:inline-block;
+	width:140px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnconfirmar.png);
+	margin-top: 10px;
+}
+.btnConfirmarEF:hover, WorkFlowButtons .btnconfirmar:focus 
+{
+	display:inline-block;
+	width:140px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnconfirmarh.png);
+	margin-top: 10px;
+}
+.btnVolverEF
+{
+	display:inline-block;
+	width:120px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnvolver.png);
+	margin-top: 10px;
+}
+.btnVolverEF:hover, WorkFlowButtons .btnVolver:focus 
+{
+	display:inline-block;
+	width:120px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnvolverh.png);
+	margin-top: 10px;
+}
+/*--Termina efectos para Botones--*/
+
+/*
+.WorkFlowButtons .btnVolver {margin-top: 50px;margin-left: 180px;}
+.WorkFlowButtons .btnConfirmar {margin-top: 50px;}
+*/
+
+.WorkFlowButtons .btnVolver {margin-top: 10px;}
+.WorkFlowButtons .btnConfirmar {margin-top: 10px;}
+
+.CuadroCaptcha .lblCaptcha {text-align: center;color: #303030;font-family: Arial;font-size: 12px;font-weight: normal; }
+.CuadroCaptcha .txtCaptcha {text-align: center;height: 26px; width:155px;color: #303030;font-family: Arial;font-size: 24px;font-weight: normal;}
+.CuadroCaptcha .Asterisco {padding: 12px 0 0 0px;float: right;margin-right: -10px;}
+.CuadroCaptcha p {margin-top: 4px;}
+.CuadroCaptcha .lblCaptchaError {font-family:Calibri;font-size:12px;letter-spacing: 1px;font-weight: bold;
+                                     border: 2px solid #00CC00;border-radius: 7px 7px 7px 7px; clear: both; color:#ffffff; 
+                                     padding: 2px 0px 4px 0px; background: #db2424; border-color: #db2424;float:left;}
+
+
+.DJCuadroCentro {}
+
+.DJCuadroCentro .chkAceptar {color:#303030;font-family:Calibri;font-size:16px;font-weight: Bold; letter-spacing: 0.1px;}
+.DJCuadroCentro .CuadroTituloIntermedio {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 2px;}
+.DJCuadroCentro .DJCuadroLegal {padding: 2px 15px 15px 15px;}
+
+.DJCuadroHeader .CuadroHeader {*margin-bottom:-4px !important;} /* Sólo IE7 */
+.DJCuadroHeader .CuadroTitulo {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 2px;}
+.DJCuadroHeader .CuadroTituloSinBack {width:700px;color:#303030;font-family:Calibri;font-size:20px;font-weight: Bold; padding: 0px 0px 5px 0px; letter-spacing: 4px;}
+.DJCuadroCentro label {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;}
+.DJCuadroCentro .Asterisco {padding: 6px 0 0 8px;float: left;}
+
+.DJCuadroCentro .DJCuadroPresen .imgAsterisco {color:red;font-family:Arial;font-size:20px;font-weight: Normal;padding: 3px 0 0 8px;float: left; height: 15px;}
+
+.DJCuadroReferen label {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroReferen {width:700px;}
+.DJCuadroReferen .Asterisco {padding: 6px 0 0 8px;float: left;}
+.DJCuadroReferen .CambioDomDigCodVal .Asterisco {margin-right: -35px;}
+.DJCuadroReferen span {margin-right: 6px;text-align: right;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroReferen input {float: left;}
+.DJCuadroReferen select {float: left;}
+.DJCuadroCentro .DJCuadroPresen .lblTachado {text-decoration: line-through;color:#c9c9c9;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroPresen .lblNoTachado {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+
+.CambioDomDigCuadradoFooter {background:url(../../App_Theme/Imagenes/DJCuadroFooter.png);height:55px;width:625px;}
+
+.DJCuadroCentro .DJCuadroPEPoF label {padding: 2px 10px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroPEPoF .lblRelacionadoPEP {padding: 0px 0px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroPEPoF input {padding: 5px 0px 5px 0px;float: left;}
+.DJCuadroCentro .DJCuadroPEPoF {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png); width:700px;}
+
+/*--Empieza Paso 3 del Representante--*/
+.DJCuadroCentro .CambioDomDigNuevoRepre span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro .DJCuadroPresen span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro .DJCuadroPresen input {float: left;}
+.DJCuadroCentro .DJCuadroPresen select {float: left;}
+/*--Termina Paso 3 del Representante--*/
+
+/*-- Empieza Panel de Validacion --*/
+.DJValidHeader .CuadroHeader {*margin-bottom:-4px !important;} /* Sólo IE7 */
+.DJValidHeader .CuadroTitulo {background:url(../../App_Theme/Imagenes/DJValidCenter.png);width:700px;color:#ffffff;font-family:Calibri;font-size:22px;font-weight: Bold; letter-spacing: 2px;padding: 0px 0px 10px 0px}
+.DJValidCentro label {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;}
+.DJValidCentro {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;}
+.DJValidCentro ul {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;margin-bottom:0px;margin-top: 0;}
+.DJValidCentro li {padding-top:5px;}
+.DJValidCentro span {padding-top:5px;}
+.DJValidCentro {background:url(../../App_Theme/Imagenes/DJValidCenter.png);width:700px;}
+.DJValidCentro .Asterisco {padding: 6px 0 0 8px;float: left;}
+/*-- Termina Panel de Validacion --*/

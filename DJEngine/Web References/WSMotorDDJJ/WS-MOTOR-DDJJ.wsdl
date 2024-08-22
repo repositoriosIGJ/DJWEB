@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Insert_Header">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="header" type="tns:DDJJHeader" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DDJJHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Operacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodHash" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoDDJJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroCorr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo01" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo02" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo03" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo04" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo05" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo06" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo07" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo08" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo09" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo10" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo11" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo12" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo13" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo14" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo15" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo16" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo17" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo18" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo19" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo20" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo21" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo22" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo23" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo24" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo25" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo26" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo27" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo28" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo29" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo30" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo31" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo32" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo33" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo34" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo35" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo36" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo37" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo38" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo39" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo40" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo41" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo42" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo43" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo44" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo45" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo46" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo47" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo48" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo49" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campo50" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Insert_HeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDJJ_ID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_Ddjj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDJJ_ID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_DdjjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_Ddjj_Id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDJJ_ID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_Ddjj_IdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DJ_ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_Libro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDJJ_ID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="DOCID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DEN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NRU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FRU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FOL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HAS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proc_LibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposSocietariosFiltrados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoDDJJ" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposSocietariosFiltradosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposSocietariosFiltradosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstWorkFlow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoDDJJ" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstWorkFlowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstWorkFlowResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLegales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoDDJJ" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLegalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLegalesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposSocietarios">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposSocietariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposSocietariosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposDocumentos">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposDocumentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposDocumentosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstCategoriaPEP">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstCategoriaPEPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstCategoriaPEPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstSubCategoriasPEP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Codigo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstSubCategoriasPEPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstSubCategoriasPEPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstVinculoPEP">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstVinculoPEPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstVinculoPEPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposClaveFiscal">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposClaveFiscalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposClaveFiscalResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposCargo">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposCargoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposCargoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposCargoFiltrados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoSocId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposCargoFiltradosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposCargoFiltradosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposDJ">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposDJResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposDJResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposMonedas">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposMonedasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposMonedasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposValuacionFiltrados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoBienId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposValuacionFiltradosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposValuacionFiltradosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposValuacion">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposValuacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposValuacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposInstrumento">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposInstrumentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposInstrumentoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposCuentaBanco">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposCuentaBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposCuentaBancoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposDictamen">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposDictamenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposDictamenResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposAsamblea">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposAsambleaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposAsambleaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposDocRubrica">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposDocRubricaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposDocRubricaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMembrete">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMembreteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMembreteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstTiposEstadosCiviles">
+        <s:complexType />
+      </s:element>
+      <s:element name="LstTiposEstadosCivilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstTiposEstadosCivilesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Insert_HeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:Insert_Header" />
+  </wsdl:message>
+  <wsdl:message name="Insert_HeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:Insert_HeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Proc_DdjjSoapIn">
+    <wsdl:part name="parameters" element="tns:Proc_Ddjj" />
+  </wsdl:message>
+  <wsdl:message name="Proc_DdjjSoapOut">
+    <wsdl:part name="parameters" element="tns:Proc_DdjjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Proc_Ddjj_IdSoapIn">
+    <wsdl:part name="parameters" element="tns:Proc_Ddjj_Id" />
+  </wsdl:message>
+  <wsdl:message name="Proc_Ddjj_IdSoapOut">
+    <wsdl:part name="parameters" element="tns:Proc_Ddjj_IdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Proc_LibroSoapIn">
+    <wsdl:part name="parameters" element="tns:Proc_Libro" />
+  </wsdl:message>
+  <wsdl:message name="Proc_LibroSoapOut">
+    <wsdl:part name="parameters" element="tns:Proc_LibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposSocietariosFiltradosSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposSocietariosFiltrados" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposSocietariosFiltradosSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposSocietariosFiltradosResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstWorkFlowSoapIn">
+    <wsdl:part name="parameters" element="tns:LstWorkFlow" />
+  </wsdl:message>
+  <wsdl:message name="LstWorkFlowSoapOut">
+    <wsdl:part name="parameters" element="tns:LstWorkFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLegalesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLegales" />
+  </wsdl:message>
+  <wsdl:message name="GetLegalesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLegalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposSocietariosSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposSocietarios" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposSocietariosSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposSocietariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDocumentosSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposDocumentos" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDocumentosSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposDocumentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstCategoriaPEPSoapIn">
+    <wsdl:part name="parameters" element="tns:LstCategoriaPEP" />
+  </wsdl:message>
+  <wsdl:message name="LstCategoriaPEPSoapOut">
+    <wsdl:part name="parameters" element="tns:LstCategoriaPEPResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstSubCategoriasPEPSoapIn">
+    <wsdl:part name="parameters" element="tns:LstSubCategoriasPEP" />
+  </wsdl:message>
+  <wsdl:message name="LstSubCategoriasPEPSoapOut">
+    <wsdl:part name="parameters" element="tns:LstSubCategoriasPEPResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstVinculoPEPSoapIn">
+    <wsdl:part name="parameters" element="tns:LstVinculoPEP" />
+  </wsdl:message>
+  <wsdl:message name="LstVinculoPEPSoapOut">
+    <wsdl:part name="parameters" element="tns:LstVinculoPEPResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposClaveFiscalSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposClaveFiscal" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposClaveFiscalSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposClaveFiscalResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCargoSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposCargo" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCargoSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposCargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCargoFiltradosSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposCargoFiltrados" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCargoFiltradosSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposCargoFiltradosResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDJSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposDJ" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDJSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposDJResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposMonedasSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposMonedas" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposMonedasSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposMonedasResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposValuacionFiltradosSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposValuacionFiltrados" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposValuacionFiltradosSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposValuacionFiltradosResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposValuacionSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposValuacion" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposValuacionSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposValuacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposInstrumentoSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposInstrumento" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposInstrumentoSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposInstrumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCuentaBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposCuentaBanco" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposCuentaBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposCuentaBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDictamenSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposDictamen" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDictamenSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposDictamenResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposAsambleaSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposAsamblea" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposAsambleaSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposAsambleaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDocRubricaSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposDocRubrica" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposDocRubricaSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposDocRubricaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMembreteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMembrete" />
+  </wsdl:message>
+  <wsdl:message name="GetMembreteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMembreteResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposEstadosCivilesSoapIn">
+    <wsdl:part name="parameters" element="tns:LstTiposEstadosCiviles" />
+  </wsdl:message>
+  <wsdl:message name="LstTiposEstadosCivilesSoapOut">
+    <wsdl:part name="parameters" element="tns:LstTiposEstadosCivilesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_MOTOR_DDJJSoap">
+    <wsdl:operation name="Insert_Header">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra en la tabla generica</wsdl:documentation>
+      <wsdl:input message="tns:Insert_HeaderSoapIn" />
+      <wsdl:output message="tns:Insert_HeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra los datos en la tabla fisica definitiva</wsdl:documentation>
+      <wsdl:input message="tns:Proc_DdjjSoapIn" />
+      <wsdl:output message="tns:Proc_DdjjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj_Id">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra los datos en la tabla fisica definitiva con devolucion de ID</wsdl:documentation>
+      <wsdl:input message="tns:Proc_Ddjj_IdSoapIn" />
+      <wsdl:output message="tns:Proc_Ddjj_IdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Libro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra los datos en la tabla DDJJ_LIBROS</wsdl:documentation>
+      <wsdl:input message="tns:Proc_LibroSoapIn" />
+      <wsdl:output message="tns:Proc_LibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietariosFiltrados">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Tipos Societarios Habilitados en DDJJ_ID</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposSocietariosFiltradosSoapIn" />
+      <wsdl:output message="tns:LstTiposSocietariosFiltradosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstWorkFlow">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WorkFlow de la Declaracion Jurada</wsdl:documentation>
+      <wsdl:input message="tns:LstWorkFlowSoapIn" />
+      <wsdl:output message="tns:LstWorkFlowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLegales">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el Marco Lega por Tipo de DJ</wsdl:documentation>
+      <wsdl:input message="tns:GetLegalesSoapIn" />
+      <wsdl:output message="tns:GetLegalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietarios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Tipos Societarios</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposSocietariosSoapIn" />
+      <wsdl:output message="tns:LstTiposSocietariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocumentos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Documentos</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposDocumentosSoapIn" />
+      <wsdl:output message="tns:LstTiposDocumentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstCategoriaPEP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Categorias de PEP</wsdl:documentation>
+      <wsdl:input message="tns:LstCategoriaPEPSoapIn" />
+      <wsdl:output message="tns:LstCategoriaPEPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstSubCategoriasPEP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">SubCategorias de PEP</wsdl:documentation>
+      <wsdl:input message="tns:LstSubCategoriasPEPSoapIn" />
+      <wsdl:output message="tns:LstSubCategoriasPEPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstVinculoPEP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Relacion Vinculo PEP</wsdl:documentation>
+      <wsdl:input message="tns:LstVinculoPEPSoapIn" />
+      <wsdl:output message="tns:LstVinculoPEPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposClaveFiscal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Claves Fiscales</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposClaveFiscalSoapIn" />
+      <wsdl:output message="tns:LstTiposClaveFiscalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Cargos</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposCargoSoapIn" />
+      <wsdl:output message="tns:LstTiposCargoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargoFiltrados">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Tipos de Cargos por Tipo Societario</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposCargoFiltradosSoapIn" />
+      <wsdl:output message="tns:LstTiposCargoFiltradosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDJ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de DJs</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposDJSoapIn" />
+      <wsdl:output message="tns:LstTiposDJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposMonedas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Monedas</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposMonedasSoapIn" />
+      <wsdl:output message="tns:LstTiposMonedasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacionFiltrados">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Tipos de Valuacion de Especies por Tipo de Bien</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposValuacionFiltradosSoapIn" />
+      <wsdl:output message="tns:LstTiposValuacionFiltradosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Valuacion de Especies</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposValuacionSoapIn" />
+      <wsdl:output message="tns:LstTiposValuacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposInstrumento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Instrumento Efectivo</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposInstrumentoSoapIn" />
+      <wsdl:output message="tns:LstTiposInstrumentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCuentaBanco">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Cuentas Bancarias</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposCuentaBancoSoapIn" />
+      <wsdl:output message="tns:LstTiposCuentaBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDictamen">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Dictamenes</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposDictamenSoapIn" />
+      <wsdl:output message="tns:LstTiposDictamenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposAsamblea">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipo de Asamblea</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposAsambleaSoapIn" />
+      <wsdl:output message="tns:LstTiposAsambleaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocRubrica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipo de Documento de Rubrica</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposDocRubricaSoapIn" />
+      <wsdl:output message="tns:LstTiposDocRubricaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMembrete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Trae Ultimo Membrete</wsdl:documentation>
+      <wsdl:input message="tns:GetMembreteSoapIn" />
+      <wsdl:output message="tns:GetMembreteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposEstadosCiviles">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tipos de Estados Civiles</wsdl:documentation>
+      <wsdl:input message="tns:LstTiposEstadosCivilesSoapIn" />
+      <wsdl:output message="tns:LstTiposEstadosCivilesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_MOTOR_DDJJSoap" type="tns:WS_MOTOR_DDJJSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert_Header">
+      <soap:operation soapAction="http://tempuri.org/Insert_Header" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj">
+      <soap:operation soapAction="http://tempuri.org/Proc_Ddjj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj_Id">
+      <soap:operation soapAction="http://tempuri.org/Proc_Ddjj_Id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Libro">
+      <soap:operation soapAction="http://tempuri.org/Proc_Libro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietariosFiltrados">
+      <soap:operation soapAction="http://tempuri.org/LstTiposSocietariosFiltrados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstWorkFlow">
+      <soap:operation soapAction="http://tempuri.org/LstWorkFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLegales">
+      <soap:operation soapAction="http://tempuri.org/GetLegales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietarios">
+      <soap:operation soapAction="http://tempuri.org/LstTiposSocietarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocumentos">
+      <soap:operation soapAction="http://tempuri.org/LstTiposDocumentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstCategoriaPEP">
+      <soap:operation soapAction="http://tempuri.org/LstCategoriaPEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstSubCategoriasPEP">
+      <soap:operation soapAction="http://tempuri.org/LstSubCategoriasPEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstVinculoPEP">
+      <soap:operation soapAction="http://tempuri.org/LstVinculoPEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposClaveFiscal">
+      <soap:operation soapAction="http://tempuri.org/LstTiposClaveFiscal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargo">
+      <soap:operation soapAction="http://tempuri.org/LstTiposCargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargoFiltrados">
+      <soap:operation soapAction="http://tempuri.org/LstTiposCargoFiltrados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDJ">
+      <soap:operation soapAction="http://tempuri.org/LstTiposDJ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposMonedas">
+      <soap:operation soapAction="http://tempuri.org/LstTiposMonedas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacionFiltrados">
+      <soap:operation soapAction="http://tempuri.org/LstTiposValuacionFiltrados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacion">
+      <soap:operation soapAction="http://tempuri.org/LstTiposValuacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposInstrumento">
+      <soap:operation soapAction="http://tempuri.org/LstTiposInstrumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCuentaBanco">
+      <soap:operation soapAction="http://tempuri.org/LstTiposCuentaBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDictamen">
+      <soap:operation soapAction="http://tempuri.org/LstTiposDictamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposAsamblea">
+      <soap:operation soapAction="http://tempuri.org/LstTiposAsamblea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocRubrica">
+      <soap:operation soapAction="http://tempuri.org/LstTiposDocRubrica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMembrete">
+      <soap:operation soapAction="http://tempuri.org/GetMembrete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposEstadosCiviles">
+      <soap:operation soapAction="http://tempuri.org/LstTiposEstadosCiviles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_MOTOR_DDJJSoap12" type="tns:WS_MOTOR_DDJJSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert_Header">
+      <soap12:operation soapAction="http://tempuri.org/Insert_Header" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj">
+      <soap12:operation soapAction="http://tempuri.org/Proc_Ddjj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Ddjj_Id">
+      <soap12:operation soapAction="http://tempuri.org/Proc_Ddjj_Id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_Libro">
+      <soap12:operation soapAction="http://tempuri.org/Proc_Libro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietariosFiltrados">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposSocietariosFiltrados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstWorkFlow">
+      <soap12:operation soapAction="http://tempuri.org/LstWorkFlow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLegales">
+      <soap12:operation soapAction="http://tempuri.org/GetLegales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposSocietarios">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposSocietarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocumentos">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposDocumentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstCategoriaPEP">
+      <soap12:operation soapAction="http://tempuri.org/LstCategoriaPEP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstSubCategoriasPEP">
+      <soap12:operation soapAction="http://tempuri.org/LstSubCategoriasPEP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstVinculoPEP">
+      <soap12:operation soapAction="http://tempuri.org/LstVinculoPEP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposClaveFiscal">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposClaveFiscal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargo">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposCargo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCargoFiltrados">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposCargoFiltrados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDJ">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposDJ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposMonedas">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposMonedas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacionFiltrados">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposValuacionFiltrados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposValuacion">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposValuacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposInstrumento">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposInstrumento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposCuentaBanco">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposCuentaBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDictamen">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposDictamen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposAsamblea">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposAsamblea" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposDocRubrica">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposDocRubrica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMembrete">
+      <soap12:operation soapAction="http://tempuri.org/GetMembrete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstTiposEstadosCiviles">
+      <soap12:operation soapAction="http://tempuri.org/LstTiposEstadosCiviles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_MOTOR_DDJJ">
+    <wsdl:port name="WS_MOTOR_DDJJSoap" binding="tns:WS_MOTOR_DDJJSoap">
+      <soap:address location="http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_MOTOR_DDJJSoap12" binding="tns:WS_MOTOR_DDJJSoap12">
+      <soap12:address location="http://zidane.igj.jus.gov.ar:7014/WS-MOTOR-DDJJ.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,358 @@
+﻿body {}
+
+.cabezaResumen 
+{
+	background-image: url(../../App_Theme/Imagenes/ContendorCab.png);	
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	height: 29px;
+	font-size: smaller;
+	text-align: left;	
+}
+
+.tablaResumen
+{
+	background-image: url(../../App_Theme/Imagenes/ContenedorCuerpo.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	width: 700px;
+	font-size: smaller;
+	text-align: left;
+}
+
+.tablaResumen span {color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+
+/*
+.WorkFlowButtons .btnVolver {margin-top: 50px;margin-left: 180px;}
+.WorkFlowButtons .btnConfirmar {margin-top: 50px;}
+*/
+
+/*--Empieza efectos para textbox--*/ /*--Version Full solo para FireFox--*/
+.txteffect {border:1px solid #a5acb2;border-radius: 3px 3px 3px 3px;}
+.txteffect:focus {
+    border-color: #56B4EF;
+    color: #333333;
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    border-radius: 3px 3px 3px 3px;
+}
+/*--Termina efectos para textbox--*/
+
+/*--Empieza efectos para dropdownlist--*/ /*--Version Full solo para FireFox--*/
+.ddleffect {border:1px solid #a5acb2;border-radius: 3px 3px 3px 3px;}
+.ddleffect:focus {
+    border-color: #56B4EF;
+    color: #333333;
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    border-radius: 3px 3px 3px 3px;
+}
+/*--Termina efectos para dropdownlist--*/
+
+/*--Empieza efectos para check--*/ /*--Version Full solo para FireFox--*/
+.DJCuadroCentro .chkNoPoseo input {display: inline-block;margin-left: 8px;}
+.DJCuadroCentro .chkNoPoseo label {display: inline-block;margin-left: 2px;font-size:10px;background-color:#dadada; padding:2px 4px 2px 4px;border-radius: 4px 4px 4px 4px; letter-spacing:0px}
+/*.chkeffect input:focus {
+    border-color: #56B4EF;
+    color: #333333;
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    border-radius: 3px 3px 3px 3px;
+}*/
+/*--Termina efectos para check--*/
+
+/*.DJCuadroCentro .lblNoPoseo {display: inline-block;margin-left: 4px;vertical-align: 2.5px;font-size:11px;color:#00638D;}*/
+
+.WorkFlowButtons .btnContinuar {margin-top: 10px;}
+.WorkFlowButtons .btnConfirmar {margin-top: 10px;}
+.WorkFlowButtons .btnVolver {margin-top: 10px;}
+.DJCuadroCentro .btnCalcular {margin-top: 10px;}
+
+/*--Empieza efectos para Botones--*/
+.WorkFlowButtons .btnContinuarEF
+{
+	display:inline-block;
+	width:134px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnContinuar.png);
+	margin-top: 10px;
+}
+.WorkFlowButtons .btnContinuarEF:hover, WorkFlowButtons .btnconfirmar:focus 
+{
+	display:inline-block;
+	width:134px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnContinuarh.png);
+	margin-top: 10px;
+}
+.WorkFlowButtons .btnConfirmarEF
+{
+	display:inline-block;
+	width:140px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnconfirmar.png);
+	margin-top: 10px;
+}
+.WorkFlowButtons .btnConfirmarEF:hover, WorkFlowButtons .btnconfirmar:focus 
+{
+	display:inline-block;
+	width:140px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnconfirmarh.png);
+	margin-top: 10px;
+}
+.WorkFlowButtons .btnVolverEF
+{
+	display:inline-block;
+	width:120px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnvolver.png);
+	margin-top: 10px;
+}
+.WorkFlowButtons .btnVolverEF:hover, WorkFlowButtons .btnVolver:focus 
+{
+	display:inline-block;
+	width:120px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btnvolverh.png);
+	margin-top: 10px;
+}
+
+.DJCuadroCentro .btnCalcularEF
+{
+	display:inline-block;
+	width:164px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btncalcular.png);
+	margin-top: -2px;
+}
+.DJCuadroCentro .btnCalcularEF:hover, DJCuadroCentro .btnCalcular:focus 
+{
+	display:inline-block;
+	width:164px;
+	height:35px;
+	background-image: url(../../App_Theme/Imagenes/btncalcularh.png);
+	margin-top: -2px;
+}
+/*--Termina efectos para Botones--*/
+
+.DJCuadroCentro .CuadroTituloIntermedio {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 1px;text-align: center;}
+.DJCuadroCentroV .CuadroTituloIntermedio {background:url(../../App_Theme/Imagenes/DJCuadroTituloGV.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 1px;text-align: center;}
+
+.DJCuadroHeader .CuadroHeader {*margin-bottom:-4px !important;} /* Sólo IE7 */
+.DJCuadroHeader .CuadroTitulo {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 2px;}
+.DJCuadroHeader .CuadroTituloV {background:url(../../App_Theme/Imagenes/DJCuadroTituloGV.png);width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 2px;}
+.DJCuadroHeader .CuadroTituloSinBack {width:700px;color:#303030;font-family:Calibri;font-size:20px;font-weight: Bold; padding: 0px 0px 5px 0px; letter-spacing: 4px;}
+.DJCuadroCentro label {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;}
+.DJCuadroCentroV {background:url(../../App_Theme/Imagenes/DJCuadroTituloGV.png);width:700px;}
+.DJCuadroCentroCaptcha {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;}
+.DJCuadroCentroCaptcha .lblBuscarRazonSoc {letter-spacing: 0.2px;color:#858585;font-family:Arial;font-size:10px;font-weight: Normal;}
+.DJCuadroCentro .Asterisco {padding: 6px 0 0 8px;float: left;}
+/*.DJCuadroCentro .btnLupa {margin-left: -30px;position: inherit;}*/
+.DJCuadroCentro .btnBuscarNroCorr {float: none;}
+.DJCuadroCentroCaptcha .btnBuscarNroCorr {float: none;}
+.DJCuadroCentro .txtNroCorr {color:#5b5b5b;font-family:Arial;font-size:16px;font-weight: bold; letter-spacing:1px;padding: 0 0 0 6px;}
+.DJCuadroCentro .DJCuadroConstituida label {padding: 2px 10px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroConstituida input {padding: 5px 0px 5px 0px;float: left;}
+.DJCuadroCentro .DJBenefSIoNO {margin-left: 20px;}
+.DJCuadroCentro .DJBenefSIoNO .chkBenefSIoNO {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:24px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 1px;}
+.DJCuadroCentro .DJBenefSIoNO .chkBenefSIoNO label {padding: 2px 10px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:15px;font-weight: Normal;}
+.DJCuadroCentro .DJBenefSIoNO .chkBenefSIoNO input {padding: 5px 0px 5px 0px; float: left;}
+.DJCuadroCentro .DJCuadroTipoBen label {padding: 2px 10px 0px 5px;letter-spacing: 0.5px;float: left;color:#303030;font-family:Arial;font-size:12px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroTipoBen input {padding: 5px 0px 5px 0px;float: left;}
+/*OLD ASTERISCO*/
+/*.DJCuadroCentro .imgAsterisco {color:red;font-family:Arial;font-size:20px;font-weight: Normal;padding: 3px 0 0 8px;float: left; height: 15px;}*/
+
+.DJCuadroReferen label {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroReferen {width:700px;}
+.DJCuadroReferen .Asterisco {padding: 6px 0 0 8px;float: left;}
+.DJCuadroReferen .CambioDomDigCodVal .Asterisco {margin-right: -35px;}
+.DJCuadroReferen span {margin-right: 6px;text-align: right;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroReferen input {float: left;}
+.DJCuadroReferen select {float: left;}
+.DJCuadroReferen .txtreferencial {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+/* Sirve para reemplazar el Textbox disabled en modo compilado */
+.DJCuadroReferen .aspNetDisabled {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+
+.DJCuadroCentro .lblTachado {text-decoration: line-through;color:#c9c9c9;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .lblNoTachado {color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+
+.DJCuadroCentro .txtreferencial {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+/* Sirve para reemplazar el Textbox disabled en modo compilado */
+.DJCuadroCentro .aspNetDisabled {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+
+.CambioDomDigCuadradoFooter {background:url(../../App_Theme/Imagenes/DJCuadroFooter.png);height:55px;width:625px;}
+
+.DJCuadroCentro .DJCuadroPEPoF label {padding: 2px 10px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroPEPoF .lblRelacionadoPEP {padding: 0px 0px 0px 5px;letter-spacing: 1px;float: left;color:#303030;font-family:Arial;font-size:14px;font-weight: Normal;}
+.DJCuadroCentro .DJCuadroPEPoF input {padding: 5px 0px 5px 0px;float: left;}
+.DJCuadroCentro .DJCuadroPEPoF {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png); width:700px;}
+.DJCuadroCentroV .DJCuadroPEPoF {background:url(../../App_Theme/Imagenes/DJCuadroTituloGV.png); width:700px;}
+
+/*--Empieza Paso 3 del Representante--*/
+.DJCuadroCentro .CambioDomDigNuevoRepre span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro  span {margin-right: 6px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.DJCuadroCentro  input {float: left;}
+.DJCuadroCentro  select {float: left;}
+/*--Termina Paso 3 del Representante--*/
+
+/*-- Empieza Nota Obligatorio --*/
+.DJCuadroCentro .NotaObligatorio
+{
+    display: block;
+    margin-top: 2px;
+    font-family: 'Open Sans';
+    font-size: 14pt;
+    color: #FF0000;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 2px 8px;
+    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+/*-- Termina Nota Obligatorio --*/
+
+/*--Empieza Error Validacion--*/
+.DJCuadroCentro .imgCruz {
+    color: red;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 0 0 8px;
+}
+/*--Termina Error Validacion--*/
+
+/*-- Empieza Panel de Validacion --*/
+.divValidacion .DJValidHeader .CuadroHeader {*margin-bottom:-4px !important;} /* Sólo IE7 */
+.divValidacion .DJValidHeader .CuadroTitulo {background:url(../../App_Theme/Imagenes/DJValidCenter.png);width:700px;color:#ffffff;font-family:Calibri;font-size:22px;font-weight: Bold; letter-spacing: 2px;padding: 0px 0px 10px 0px}
+.divValidacion .DJValidCentro label {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;}
+.divValidacion .DJValidCentro {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;}
+.divValidacion .DJValidCentro ul {color:#ffffff;font-family:Arial;font-size:14px;font-weight: Normal;letter-spacing: 0.5px;margin-bottom:0px;margin-top: 0;}
+.divValidacion .DJValidCentro li {padding-top:5px;}
+.divValidacion .DJValidCentro span {padding-top:5px;}
+.divValidacion .DJValidCentro {background:url(../../App_Theme/Imagenes/DJValidCenter.png);width:700px;}
+.divValidacion .DJValidCentro .Asterisco {padding: 6px 0 0 8px;float: left;}
+/*-- Termina Panel de Validacion --*/
+
+/*-- Empieza ToolTip --*/
+.tooltipTitle {
+font-weight: bold;
+color:#FF9900;
+}
+#tooltip {
+position: absolute;
+padding: 4px;
+color: #FFF;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 12px;
+display: none;
+text-align: left;
+background-color: #000;
+opacity: 0.8;
+-moz-opacity: 0.8;
+filter: alpha(opacity=80);
+}
+/*-- Termina ToolTip --*/
+
+/* Empieza Mensaje de Atención */
+.MSGCuadroNuevo {
+	background: url("") repeat-x scroll 0 0 #40a935;
+    border: 1px solid #1c7213;
+    border-radius: 5px 5px 5px 5px;
+    /*font-size: 13px;*/
+    line-height: 14px;
+    /*margin: 0 0 1em;*/
+    margin: 0 0 0;
+    /*max-height: 36px;*/
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*width: 700px;*/
+	top: 0px;
+	left: 0px;
+}
+.MSGCuadroNuevo .CuadroTitulo {width:430px;color:#ffffff;font-family:Calibri;font-size:20px;font-weight: Bold; padding: 0px 0px 10px 0px; letter-spacing: 2px; margin-top: -4px}
+.MSGCuadroNuevo hr 
+{
+	margin-top: -4px;
+	margin-bottom: -14px;
+	/*height: 2px;*/
+	border-color: #1c7213;
+	border-width: thin;
+	/*-moz-transform: scaleY(-1); /* Firefox */
+}
+/*.MSGCuadroNuevo .MSGCuadroCentroNuevo span {margin-right: 6px;text-align: right;color: #303030;font-family: Arial;font-size: 20px;font-weight: bold; letter-spacing: 2px;}*/
+.MSGCuadroNuevo .MSGCuadroCentroNuevo p {line-height:18px;text-align:center;color: #ffffff;font-family: Arial;font-size: 16px;font-weight: bold; letter-spacing: 2px; border-radius: 5px 5px 5px 5px; padding: 2px 0 0 0; margin-bottom: -2px;}
+/* Termina Mensaje de Atención */
+
+/* Empieza Cuadro Tipo SAE */
+.SAECuadroNuevo {
+	background: url("../../App_Theme/Imagenes/SAECuadroBack.jpg") repeat-x scroll 0 0 #eeeeee;
+    /*background-color:#eeeeee;*/
+    /*background-color:#ebebeb;*/
+    border: 1px solid #cbcbcb;
+    border-radius: 5px 5px 5px 5px;
+    /*font-size: 13px;*/
+    line-height: 14px;
+    /*margin: 0 0 1em;*/
+    margin: 0 0 0;
+    /*max-height: 36px;*/
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*width: 700px;*/
+	top: 0px;
+	left: 0px;
+}
+.SAECuadroNuevo .CuadroTitulo {width:700px;color:#303030;font-family:Calibri;font-size:22px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 1px;}
+.SAECuadroNuevo hr 
+{
+	margin-top: -3px; 
+	/*height: 2px;*/
+	border-color: #ffffff;
+	border-width: thin;
+	/*-moz-transform: scaleY(-1); /* Firefox */
+}
+.SAECuadroNuevo .SAECuadroCentroNuevo span {margin-right: 6px;text-align: right;color: #303030;font-family: Arial;font-size: 14px;font-weight: normal;}
+.SAECuadroNuevo .SAECuadroCentroNuevo input {float: left;}
+.SAECuadroNuevo .SAECuadroCentroNuevo .btngrdCancelar {*display: block !important; *margin-left:22px !important; *margin-top:-28px !important;} /* Hack Sólo IE7 */
+.SAECuadroNuevo .SAECuadroCentroNuevo select {float: left;}
+.SAECuadroNuevo .SAECuadroCentroNuevo .txtreferencial {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+/* Sirve para reemplazar el Textbox disabled en modo compilado */
+.SAECuadroNuevo .SAECuadroCentroNuevo .aspNetDisabled {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}
+.SAECuadroNuevo .SAECuadroCentroNuevo .SAECuadroLegal { line-height: normal; white-space: normal; padding: 2px 15px 15px 15px;}
+/* Termina Cuadro Tipo SAE */
+
+/* EntidadC.aspx */
+.DJCuadroCentro .lblDatosExtra
+{
+    text-align: center; 
+    vertical-align: middle;
+    color: Red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.DJDatosExtra .CuadroTituloExtra {background:url(../../App_Theme/Imagenes/DJCuadroTituloG.png);width:700px;color:#303030;font-family:Calibri;font-size:20px;font-weight: Bold; padding: 0px 0px 12px 0px; letter-spacing: 2px;text-align: center;}
+
+.DJDatosExtra hr {width:600px; 
+                    margin:0; 
+                    padding:0; 
+                    height:1px;
+                    /*background-repeat: repeat-x;*/
+                    background-color: #ccc;
+                    border: 0;
+                    overflow:hidden;
+}

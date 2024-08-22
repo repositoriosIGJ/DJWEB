@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx?wsdl" docRef="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx" xmlns:q1="http://tempuri.org/" binding="q1:IGJ_GenericSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://zidane.igj.jus.gov.ar:9020/WS-IGJ-Generic.asmx" xmlns:q2="http://tempuri.org/" binding="q2:IGJ_GenericSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

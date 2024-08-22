@@ -1,0 +1,15 @@
+﻿body
+{
+}
+.DJCuadroCentro .btnGuardarRubrica
+{
+    float: none;
+    text-align: center;
+}
+
+.grdbfhash
+{
+    max-width: 190px; /*overflow: auto;*/
+    display: inline-block;
+    word-wrap: break-word;
+}

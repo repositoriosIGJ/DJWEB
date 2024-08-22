@@ -1,0 +1,145 @@
+﻿.DJCuadroCentro .btnLupa {margin-left: -30px;position: inherit;}  
+.DJCuadroCentro .txtNroCorr {color:#5b5b5b;font-family:Arial;font-size:16px;font-weight: bold; letter-spacing:1px;padding: 0 0 0 6px;}
+/*.DJCuadroCentro .txtreferencial {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}*/
+/* Sirve para reemplazar el Textbox disabled en modo compilado */
+/*.DJCuadroCentro .aspNetDisabled {text-align: center;color: #0187b6;font-family: Arial;font-size: 14px;font-weight: normal; border-radius: 5px 5px 5px 5px;}*/
+
+/*.CuadroBusEntCentro .DatosEntidad {height:20px;width:350px;background:url(../../App_Theme/Imagenes/fondoheadermenu.jpg) repeat;border: 1px solid #e4e4e4;}
+.CuadroBusEntCentro .DatosEntidad label {color:#5b5b5b;font-family:Arial;font-size:12px;font-weight: bold;}
+.CuadroBusEntCentro .DatosEntidad span {color:#5b5b5b;font-family:Arial;font-size:12px;font-weight: bold;letter-spacing:0.8px;}
+.CuadroBusEntCentro .DatosEntidad .HeaderMenuLeft {position:relative;float:Left;padding:1px 0px;}
+.CuadroBusEntCentro .DatosEntidad .Separador {display:inline-block;}
+.CuadroBusEntCentro .brchico {margin-top: -10px;}
+.CuadroBusEntCentro .btnLupa {margin-left: -30px;position: absolute;}    
+.CuadroBusEntCentro .btnBusquedaAvanzada {position: absolute;}*/
+/*.CuadroBusEntCentro .txtNroCorr {color:#5b5b5b;font-family:Arial;font-size:16px;font-weight: bold; letter-spacing:1px;padding: 0 0 0 6px;}*/
+
+/*.CuadroBusEntAvanCentro {position: relative; left:-200; top:0;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado {height:175px; width:620px; font-size:7px; z-index: 1; left: 36px; position: absolute; top: -40px; background-color:#ededed; border-color:Gray; border-style:dotted; color:#FF8000}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .gridSociedades {background-color:White; border-color:#999999; border-style:none; border-width:1px; width:570px; height:1px;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .divucCaptchaBusEnt {margin-left: 616px;margin-top: -145px;position: absolute;}
+*/
+/*
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .gridSociedades .Columna1 
+{color: #303030;
+font-family: Arial;
+font-size: 12px;
+font-weight: bold;
+border-style: dashed;
+border-color: #EDEDED;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .gridSociedades .Columna2 
+{color: #4c6945;
+font-family: Arial;
+font-size: 10px;
+font-weight: normal;
+border-style: dashed;
+border-color: #EDEDED;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .gridSociedades .Columna3 
+{color: #303030;
+font-family: Arial;
+font-size: 10px;
+font-weight: normal;
+border-style: dashed;
+border-color: #EDEDED;}
+*/
+/*
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado span {margin-right: 4px;text-align: right;background-color:#ededed;color: #303030;font-family: Arial;font-size: 12px;font-weight: normal;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado input {float: left;font-family: Arial;font-size: 12px;font-weight: normal;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado select {float: left;font-family: Arial;font-size: 10px;font-weight: normal;}
+
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .chkFrase input {display: inline-block;margin-left: 8px;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .chkFrase label {display: inline-block;margin-left: 2px;font-size:10px;background-color:#dadada; padding:2px 4px 2px 4px;border-radius: 4px 4px 4px 4px; letter-spacing:0px}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .CuadroBusEntError {background:url(../../App_Theme/Imagenes/CuadroBusEntError.jpg);display:block;width: 520px;height: 21px;}
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .CuadroBusEntError .lblBusEntError {background-color: Transparent; text-align:center;font-family:Calibri;font-weight: bold;color:#ffffff;font-size:12px;letter-spacing: 1px;font-weight: bold;display: block;padding: 3px 0px 0px 0px;}
+*/
+/*.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .btnLupa {height: 20px;
+    margin-left: -20px;
+    margin-top: -9px;
+    position: absolute;
+    width: 20px;
+    z-index: 1;}*/
+    
+/*.CuadroBusEntAvanCentro .pnlBuscadorAvanzado .btnLupa {height: 20px;
+    width: 20px;
+    z-index: 1;}*/ 
+
+/*--Empieza BusEnt--*/
+/*.CuadroBusEntCentro {background:url(../../App_Theme/Imagenes/CuadroBusEntCentro.jpg);width:397px;}
+.CuadroBusEntCentro .divimgBusEnt {background:url(../../App_Theme/Imagenes/CuadroBusEntImg.png);display:block;width: 228px;height: 82px;}
+.CuadroBusEntCentro .imgBusEnt {display: block;margin-left: 14px;padding: 1px 0px 0px 0px;}
+.CuadroBusEntCentro .divtxtucBusEnt {background:url(../../App_Theme/Imagenes/CuadroBusEntTxt.png);display:block;width: 228px;height: 47px;}/*margin-top: -16px;}
+.CuadroBusEntCentro .txtucBusEnt {margin-left: 16px;margin-top: 8px;text-align: center;display:block;height: 22px; width:135px;color: #303030;font-family: Arial;font-size: 20px;}
+.CuadroBusEntCentro .btnRecargar {display: block;margin-left: 29px;margin-top: -7px;}
+.CuadroBusEntCentro .btnInfo {display: block;margin-left: 29px;margin-top: -20px;}*/
+/*.CuadroBusEntCentro .Asterisco {padding: 12px 0 0 0px;float: right;margin-right: -10px;}*/
+/*.CuadroBusEntCentro .imgAsterisco {display: block;margin-left: 8px;margin-top: -20px;color:red;font-family:Arial;font-size:20px;font-weight: Normal;float: left; height: 15px;} /*padding: 4px 0 0 8px;}*/
+/*.CuadroBusEnt .lblBusEntError {font-family:Calibri;font-size:12px;letter-spacing: 1px;font-weight: bold;
+                                     border: 2px solid #00CC00;border-radius: 7px 7px 7px 7px; clear: both; color:#ffffff; 
+                                     padding: 2px 0px 4px 0px; background: #db2424; border-color: #db2424;float:left;}*/
+/*.CuadroBusEntError {background:url(../../App_Theme/Imagenes/CuadroBusEntError.png);display:block;width: 228px;height: 26px;}
+.CuadroBusEntError .lblBusEntError {font-family:Calibri;font-weight: bold;color:#ffffff;font-size:12px;letter-spacing: 1px;font-weight: bold;display: block;padding: 8px 0px 0px 0px;}/*background: #db2424;}*/
+/*--Termina BusEnt--*/
+
+/*-- Empieza Hacks para Sólo IE7 --*/
+/*.CuadroBusEntHeader {*margin-bottom:-7px !important;}*/ /* Sólo IE7 */
+/*.CuadroBusEntCentro .divimgBusEnt {*margin-bottom:-8px !important;} /* Sólo IE7 */
+/*.CuadroBusEntCentro .ImgSeparador {*margin-bottom:-4px !important;} /* Sólo IE7 */
+/*.CuadroBusEntFooter {*margin-top:-7px !important;} /* Sólo IE7 */
+/*.CuadroBusEntCentro .btnRecargar {*margin-left:24px !important;*margin-top:-3px !important;} /* Sólo IE7 */
+/*.CuadroBusEntCentro .btnInfo {*margin-left:24px !important;} /* Sólo IE7 */
+/*.CuadroBusEntCentro .imgBusEnt {*margin-left:0px !important;} /* Sólo IE7 */
+/*.CuadroBusEntCentro .txtucBusEnt {width:132px;}
+/*.CuadroBusEntError {*margin-bottom:3px !important;} /* Sólo IE7 */
+/*-- Termina Hacks para Sólo IE7 --*/
+
+/*--Empieza Error Validacion--*/
+/*.divtxtucBusEnt .imgCruz 
+{
+    color: red;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -24px;
+    padding: 2px 0 0 9px;
+}*/
+/*--Termina Error Validacion--*/
+
+/*--Empieza efectos para textbox--*/ /*solo para FireFox*/
+/*.CuadroBusEntCentro .txtucBusEnt {border:1px solid #a5acb2;border-radius: 3px 3px 3px 3px;}
+.CuadroBusEntCentro .txtucBusEnt:focus {
+    border-color: #56B4EF;
+    color: #333333;
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    border-radius: 3px 3px 3px 3px;
+}*/
+/*--Termina efectos para textbox--*/
+
+
+/*--Empieza Buscador de Entidades--*/
+/*.BuscadorEntlblRazonSocial {background-color: #00CC00;
+    display: block;
+    font-family: Calibri;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 4px;
+    width: 600px;}
+*/ 
+/*    
+.CuadroBusEntAvanCentro .pnlBuscadorAvanzado em {
+	background: url(../../App_Theme/Imagenes/hover.png) no-repeat;
+	width: 180px;
+	height: 45px;
+	position: absolute;
+	top: -85px;
+	left: -15px;
+	text-align: center;
+	padding: 20px 12px 10px;
+	font-style: normal;
+	z-index: 2;
+	display: none;
+}*/
+
+  /* tooltip styling. by default the element to be styled is .tooltip  */
